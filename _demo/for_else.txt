@@ -1,0 +1,6 @@
+It is time for a software engineer to try and learn his older sun to programm.
+But what is the best approach to achieve such a difficult task for a self tought professional, who has no experience in teaching, but wants that his son to folow his steps in the mistirious and beautiful path of creating software.
+To accomplish this, I asked myself these questions:
+How will I get his attention?
+What programm language will I teach him first?
+

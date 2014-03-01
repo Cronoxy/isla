@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>Isla - Planets</title>
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <script src="js/head.loader.js"></script>
+        <script type="text/javascript">
+            head.js("js/node_modules/underscore/underscore-min.js",
+                    "js/node_modules/multimethod/multimethod-min.js",
+                    "js/node_modules/isla/node_modules/pegjs/lib/peg.js",
+                    "js/jquery-min.js",
+                    "js/jquery-blink.js",
+                    "js/jquery.console.js",
+                    "js/node_modules/isla/src/isla.min.js",
+                    // "js/node_modules/isla/src/isla.js",
+                    // "js/node_modules/isla/src/utils.js",
+                    // "js/node_modules/isla/src/grammar.js",
+                    // "js/node_modules/isla/src/library.js",
+                    // "js/node_modules/isla/src/parser.js",
+                    // "js/node_modules/isla/src/interpreter.js",
+
+
+                    "js/src/ide.min.js",
+                    // "js/src/ui.js",
+                    // "js/src/tutor.js",
+                    // "js/src/env-store.js",
+                    // "js/src/eventer.js",
+                    // "js/src/code-analyzer.js",
+                    // "js/src/expression-describer.js",
+                    // "js/src/node-describer.js",
+                    // "js/src/mapper.js",
+                    // "js/src/mouser.js",
+                    // "js/src/console-indicator.js",
+                    // "js/src/text-helper.js",
+                    // "js/src/canvas-helper.js",
+                    // "js/src/helper.js",
+                    // "js/src/text-grabber.js",
+                    // "js/src/highlighter.js",
+                    // "js/src/terminal.js",
+                    // "js/src/demo-utils.js",
+                    // "js/src/demo-runner.js",
+
+
+                    "js/src/demos/planets.js",
+                    function() {
+                        new DemoRunner(Planets);
+
+                        $(window).resize(function() {
+                            resizeCavas();
+                        });
+
+                        $(document).ready(function() {
+                            resizeCavas();
+                        });
+                    });
+            function resizeCavas() {
+                $('#canvas').prop('width', $('.canvas').width());
+                $('#canvas').prop('height', $('.canvas').height() - 30);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="tutor"></div>
+        <div class="console-canvas-container">
+            <div class="console" id="console"></div>
+            <div class="canvas">
+                <canvas id="canvas" width="800" height="600" style="position: relative; top: 10px;"></canvas>
+            </div>
+            <div class="guide">
+                <iframe src="guide.html" style="border: 0; height: 100%; width: 100%; overflow: auto;"></iframe>
+            </div>
+        </div>
+        <div id="help"></div>
+    </body>
+</html>

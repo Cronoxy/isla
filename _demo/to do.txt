@@ -1,0 +1,20 @@
+- remove unused javascript files
+- write exercises
+- update the language guide
+- translate the guide in romanian
+
+
+=======================================
+- shapes: circle, rectangle, square, triangle, polygons(pentagon, hexagon, heptagon, octagon)
+- set color: objName color is 
+	red
+        yellow
+        green
+        blue
+        indigo
+        violet
+        gray
+	or 'hexa_code'
+- get color: write objName color
+- get order: write ObjName order
+- set order: objName order is '21'
